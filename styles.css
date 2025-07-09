@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px solid #b5eb04;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  padding: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+header .container {
+  max-width: 92rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header h1 {
+  flex: 1 1 80%;
+}
+header nav {
+  max-width: 40%;
+  transition: all 0.2s ease;
+}
+header nav ul {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  list-style: none;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+header nav ul li a {
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+  flex: 1 1 20%;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.section-hero {
+  width: 100%;
+  height: 90vh;
+  padding: 2rem 4rem;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.4)), url("hero-img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.section-hero .hero-text-box {
+  max-width: 92rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: center;
+  height: 50%;
+  gap: 20px;
+}
+
+.hero-heading {
+  font-size: 6.8rem;
+  letter-spacing: -1.5px;
+  line-height: 0.9;
+  color: #fff;
+}
+
+.hero-description {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.btn-primary {
+  display: inline-block;
+  width: 15rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: none;
+  border-radius: 1.9rem;
+  background-color: #606c38;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+}
+
+.section-features {
+  background-color: #f5f5f5;
+}
+
+.cards-list-container {
+  max-width: 92rem;
+  display: flex;
+  margin: 0 auto;
+  padding: 4rem 2rem 4rem;
+  flex-direction: column;
+  align-items: center;
+}
+.cards-list-container h2 {
+  font-size: 3.6rem;
+}
+.cards-list-container .cards-list {
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.cards-list-container .cards-list .card {
+  text-align: center;
+  width: 25%;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.cards-list-container .cards-list .card span {
+  font-size: 2.6rem;
+  color: #606c38;
+}
+.cards-list-container .cards-list .card p {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.cards-list-container .cards-list .card a:link,
+.cards-list-container .cards-list .card a:visited {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  background-color: #606c38;
+  color: #fff;
+  border-radius: 9px;
+  transition: all 0.2s ease;
+}
+.cards-list-container .cards-list .card a:hover,
+.cards-list-container .cards-list .card a:active {
+  background-color: #c3cca4;
+  color: #222;
+}
+.cards-list-container .cards-list .card:hover {
+  border: 1px solid #606c38;
+  border-radius: 7px;
+  background-color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.section-contact {
+  padding: 2rem 4rem;
+}
+.section-contact .form-container {
+  max-width: 92rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+.section-contact .form-container form {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 1rem;
+}
+.section-contact .form-container form label {
+  font-size: 1.4rem;
+}
+.section-contact .form-container form input,
+.section-contact .form-container form textarea {
+  padding: 1.5rem;
+  border-radius: 7px;
+}
+.section-contact .form-container form button {
+  transition: all 0.2s ease;
+}
+.section-contact .form-container form button:hover {
+  transform: scale(1.05);
+  background-color: #2b3606;
+}
+.section-contact .form-container h2 {
+  font-size: 2.6rem;
+}
+
+.invisible:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+footer .footer-container {
+  max-width: 92rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+footer .footer-container .social-box {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+footer .footer-container .social-box li {
+  font-size: 1.4rem;
+}
+footer .footer-container .social-box li a {
+  color: #fff;
+}
+footer small {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  header .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header nav {
+    width: 100%;
+    display: none;
+    transition: all 0.2s ease;
+  }
+  header nav ul {
+    flex-direction: column;
+    flex: 1 0 100%;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+  header .menu-icon {
+    display: block;
+    color: #fff;
+  }
+  header .display-nav {
+    display: block;
+    flex: 1 0 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-features .cards-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-features .cards-list .card {
+    width: 80%;
+  }
+  .section-hero .hero-text-box {
+    height: 90%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/b4d287f95b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>LFNA-production</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Logo</h1>
+        <a href="#" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero-text-box">
+          <h1 class="hero-heading">Define your future</h1>
+          <p class="hero-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            veritatis mollitia illum laborum rerum vel perspiciatis debitis eum
+            ipsum repudiandae
+          </p>
+          <button type="button" class="btn-primary">call to action</button>
+        </div>
+      </section>
+      <section class="section-features">
+        <article class="cards-list-container">
+          <h2>Explore reliable opportunities</h2>
+          <ul class="cards-list">
+            <li class="card">
+              <span><i class="fa-solid fa-gauge"></i></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                optio consequuntur, dicta delectus harum minima!
+              </p>
+              <a href="#">Learn more</a>
+            </li>
+            <li class="card">
+              <span><i class="fa-solid fa-coins"></i></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                optio consequuntur, dicta delectus harum minima!
+              </p>
+              <a href="#">Learn more</a>
+            </li>
+            <li class="card">
+              <span><i class="fa-solid fa-satellite"></i></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                optio consequuntur, dicta delectus harum minima!
+              </p>
+              <a href="#">Learn more</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="section-contact">
+        <article class="form-container">
+          <h2>Contact us</h2>
+
+          <form action="#" method="post">
+            <label for="name" aria-describedby="name-field">Name</label>
+            <h2 id="name-field" class="invisible">
+              Firstname and lastname of the user
+            </h2>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="e.g. John Smith"
+              required
+              pattern="\w{3,16}"
+            />
+            <label for="email" aria-describedby="email-field">Email</label>
+            <h2 class="invisible" id="email-field">Email of the user</h2>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. jsmith@example.com"
+              size="40"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            />
+            <label for="message" aria-describedby="message-field"
+              >Your Message:</label
+            >
+            <h2 class="invisible" id="message-field">
+              Please enter your message to us
+            </h2>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Type here..."
+            ></textarea>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <h1>Logo</h1>
+        <ul class="social-box">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <small>&copy;LFNA-production 2025</small>
+    </footer>
+  </body>
+</html>
