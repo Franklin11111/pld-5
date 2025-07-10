@@ -48,6 +48,17 @@ header nav ul {
 header nav ul li a {
   color: #fff;
 }
+header nav ul li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+header nav ul li:hover::after {
+  width: 100%;
+}
 
 .menu-icon {
   display: none;
@@ -103,6 +114,12 @@ header nav ul li a {
   cursor: pointer;
   color: #fff;
   font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #2b3606;
 }
 
 .section-features {
@@ -289,9 +306,29 @@ input:focus::placeholder {
   opacity: 0;
 }
 
-input:not(:placeholder-shown) + .error,
-textarea:not(:placeholder-shown) + .error {
+input:invalid:placeholder-shown,
+textarea:invalid:placeholder-shown {
+  border: #333 solid 1px;
+}
+
+input:valid ~ .error,
+textarea:valid ~ .error {
   display: none;
+}
+
+input:invalid ~ .error,
+textarea:invalid ~ .error {
+  display: block;
+}
+
+input:invalid,
+textarea:invalid {
+  border: red solid 3px;
+}
+
+input:valid,
+textarea:valid {
+  border: green solid 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */

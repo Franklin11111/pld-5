@@ -72,7 +72,7 @@
         <article class="form-container">
           <h2>Contact us</h2>
 
-          <form action="#" method="post" onsubmit="return validateForm()">
+          <form action="#" method="post" novalidate>
             <label for="name" aria-describedby="name-field">Name</label>
             <h2 id="name-field" class="invisible">
               Firstname and lastname of the user
@@ -82,6 +82,8 @@
               name="name"
               id="name"
               placeholder="e.g. John Smith"
+              pattern="\w{3,16}\s\w{3,16}"
+              required
             />
             <span class="error error-name"></span>
             <label for="email" aria-describedby="email-field">Email</label>
@@ -93,6 +95,7 @@
               placeholder="e.g. jsmith@example.com"
               size="40"
               pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required
             />
             <span class="error error-email"></span>
             <label for="message" aria-describedby="message-field"
@@ -105,6 +108,9 @@
               name="message"
               id="message"
               placeholder="Type here..."
+              name="message"
+              required
+              minlength="10"
             ></textarea>
             <span class="error error-message"></span>
             <button type="submit" class="btn-primary">Submit</button>
